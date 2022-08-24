@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="./p5.js"></script>
+		<style>
+		.container {
+		  height: 200px;
+		  position: relative;
+		  border: 3px solid green;
+		}
+		
+		.center {
+		  margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		}
+		</style>	
+	</head>
+
+
+	<div class = "center">
+	<div>
+		<body>
+		<input type="text" id="name1" name="name1" required
+       		minlength="1" maxlength="36" size="36">
+		</body>
+    	<body>
+       	 <input type="text" id="year1" name="year1" required
+       		minlength="1" maxlength="8" size="8">
+    	</body>
+	</div>
+	<div>
+        <body>
+        <input type="text" id="name2" name="name2" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year2" name="year2" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name3" name="name3" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year3" name="year3" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name4" name="name4" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year4" name="year4" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name5" name="name5" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year5" name="year5" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name6" name="name6" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year6" name="year6" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name7" name="name7" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year7" name="year7" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name8" name="name8" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year8" name="year8" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name9" name="name9" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year9" name="year9" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name10" name="name10" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year10" name="year10" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name11" name="name11" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year11" name="year11" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+    <div>
+        <body>
+        <input type="text" id="name12" name="name12" required
+            minlength="1" maxlength="36" size="36">
+        </body>
+        <body>
+         <input type="text" id="year12" name="year12" required
+            minlength="1" maxlength="8" size="8">
+        </body>
+    </div>
+
+
+
+
+	<div>
+        <body>
+            <button id="submit">Submit</button>
+        </body>
+    </div>
+	</div>
+
+
+	<script>
+var confirm = document.getElementById("submit")
+
+
+confirm.addEventListener("click",function(){
+    var input1 = document.getElementById("name1").value;
+    var input2 = document.getElementById("year1").value;
+    var movie1 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie1",JSON.stringify(movie1));
+
+    var input1 = document.getElementById("name2").value;
+    var input2 = document.getElementById("year2").value;
+    var movie2 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie2",JSON.stringify(movie2));
+
+    var input1 = document.getElementById("name3").value;
+    var input2 = document.getElementById("year3").value;
+    var movie3 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie3",JSON.stringify(movie3));
+
+    var input1 = document.getElementById("name4").value;
+    var input2 = document.getElementById("year4").value;
+    var movie4 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie4",JSON.stringify(movie4));
+
+
+
+    var input1 = document.getElementById("name5").value;
+    var input2 = document.getElementById("year5").value;
+    var movie5 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie5",JSON.stringify(movie5));
+
+    var input1 = document.getElementById("name6").value;
+    var input2 = document.getElementById("year6").value;
+    var movie6 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie6",JSON.stringify(movie6));
+
+    var input1 = document.getElementById("name7").value;
+    var input2 = document.getElementById("year7").value;
+    var movie7 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie7",JSON.stringify(movie7));
+
+    var input1 = document.getElementById("name8").value;
+    var input2 = document.getElementById("year8").value;
+    var movie8 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie8",JSON.stringify(movie8));
+
+
+    var input1 = document.getElementById("name9").value;
+    var input2 = document.getElementById("year9").value;
+    var movie9 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie9",JSON.stringify(movie9));
+
+    var input1 = document.getElementById("name10").value;
+    var input2 = document.getElementById("year10").value;
+    var movie10 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie10",JSON.stringify(movie10));
+
+    var input1 = document.getElementById("name11").value;
+    var input2 = document.getElementById("year11").value;
+    var movie11 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie11",JSON.stringify(movie11));
+
+    var input1 = document.getElementById("name12").value;
+    var input2 = document.getElementById("year12").value;
+    var movie12 = { name: input1, year: input2}
+    console.log(input1,input2)
+    sessionStorage.setItem("movie12",JSON.stringify(movie12));
+
+
+    location.href="reveal.html";
+    window.location.href = "./reveal.html"
+},false);
+
+
+	</script>
+    <!--><body style="background-color:black;text-align:center">
+		check
+	</body><!-->
+</html>
